@@ -1,0 +1,162 @@
+
+@font-face{
+    font-family: "Oswald-Light";
+    src: url('../fonts/Oswald-Light.ttf');
+}
+
+@font-face{
+    font-family: "Oswald-Medium";
+    src: url('../fonts/Oswald-Medium.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Oswald-Medium";
+}
+
+/* celular */
+
+.img-responsive {
+    width: 45%;
+    height: auto;
+  
+}
+
+.headerPrincipal{
+    background-image: url(../img/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f3f3f3;
+}
+
+.headerContainer{
+    background-color: #ba4c42d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerPrincipal h1{
+    font-size: 3em;
+    padding: .5em 0;
+}
+
+.redeSocial{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerPrincipal h2{
+    font-family: "Oswald-Light";
+    font-weight: 100;
+    font-size: 2em;
+    text-align: center;
+}
+
+.headerPrincipal p {
+    font-family: "Oswald-Light";
+    display: none;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.baixarCelular{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+/* tablet */
+@media screen and (min-width: 768px){
+
+    .headerPrincipal p {
+        display: block;
+        width: 85%;
+        font-size: 1.5em;
+    }
+
+    .redeSocial{
+        width: 20%;
+    }
+    
+    .baixarCelular{
+        width: 50%;
+    }
+
+}
+
+/* monitores antigos */
+@media screen and (min-width: 992px){
+
+}
+
+
+/* monitores normais */
+@media screen and (min-width: 1200px){
+    .headerContainer{
+        background-color: #474747a6;       
+    }
+
+    .headerPrincipal h1{
+        font-size: 2em;
+    }
+
+    .contentContainer{
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        width: 40%;
+        margin-left: 40%;
+        padding: 1em 0;
+    }
+
+    .headerPrincipal h2{
+        align-self: flex-start;
+    }
+
+    .headerPrincipal p {
+        text-align: left;
+        align-self: flex-start;
+    }
+    
+    .redeSocial {
+        width: 10%;
+    }
+
+    .baixarCelular{
+        width: 50%;
+        align-self: flex-start;
+    }
+
+    .img-responsive {
+        width: 45%;
+        height: auto;
+        margin-right: 5px;
+    }
+}
