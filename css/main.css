@@ -24,7 +24,6 @@ body{
 .img-responsive {
     width: 45%;
     height: auto;
-  
 }
 
 .headerPrincipal{
@@ -81,14 +80,181 @@ body{
     padding: 1em 0;
 }
 
+/* sessão de topicos */
+
+.sessaoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-family: "Oswald-Light";
+    border-top: 10px solid #c64937;
+}
+
+.sessaoTopico{
+    color: #8a8a8a;
+    display: flex;
+    flex-direction: column;
+    font-family: "Oswald-Light" ;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.sessaoTopico img{
+    width: 25%;
+    height: auto;
+    margin: .5em 0;
+}
+
+.sessaoTopico h2{
+    font-size: 2em;
+    padding: .2em 0;
+}
+
+.sessaoTopico h3{
+    font-size: 1.3em;
+    color: #c0c0c0;
+    padding: .5em 0;
+}
+
+.sessaoTopico p{
+    font-size: 1.2em;
+    font-weight: 100;
+    padding: .5em ;
+}
+
+.fraseEfeito{
+    background-color: #c64937;
+    color: #f3f3f3;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em 2em;
+    font-family: "Oswald-Light";
+    font-weight: 100;
+}
+
+/* sessão works */
+
+.sessaoWorks{
+    background-color:#393b47;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oswald-Light";
+}
+
+.sessaoWorks h1{
+    
+    font-size: 3.5em;
+    font-weight: 100;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.workContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.blocoWork:nth-child(odd){
+    background-color: #2b2e37;
+}
+
+.blocoWork .bg-imagem{
+    background-color:#c64937; 
+    border: 7px solid #c64937;
+}
+
+.blocoWork .padding-imagem{
+    margin-right: 1em;
+}
+
+.blocoWork h2{
+    font-size: 2em;
+    padding: .5em 0;
+    text-align: center;
+}
+
+.blocoWork p{
+   padding: 0 1em;
+}
+
+.contentTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.textContent h2{
+    width: 100%;
+}
+
+/* Sessão Formulário */
+
+.sessaoFormulario{
+    background-color: #c64937;
+    color: #f3f3f3;
+    font-family:"Oswald-Light";
+}
+
+.sessaoFormulario h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 100;
+    padding: .5em 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+}
+
+.formInput{
+    padding: .5em 0;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 1em;
+
+}
+
+.formBotao{
+    align-self: flex-start;
+    background-color: #b04638;
+    color: #f3f3f3;
+    border: 0;
+    padding: 1em;
+    margin: 1em 0;
+    transition: .3s;
+}
+
+.formBotao:hover{
+    background-color: #8f3c32;
+}
 
 
-
-
-
-
-
-
+.TinyLove-footer{
+    font-family: "Oswald-Light";
+    background-color: #f3f3f3;
+    color: #c64937;
+    text-align: center;
+    padding: 1em 0;
+}
 
 /* media queries */
 
@@ -109,13 +275,26 @@ body{
         width: 50%;
     }
 
+    /* sessão de topicos */
+
+    .sessaoTopico img{
+        width: 15%;
+        height: auto;
+    }
+
+    .sessaoTopico h2{
+        font-size: 2.5em;
+    }
+
+    .sessaoTopico h3{
+        font-size: 1.7em;
+    }
+
+    .sessaoTopico p{
+        font-size: 1.5em;
+        padding: 1em 5em;
+    }
 }
-
-/* monitores antigos */
-@media screen and (min-width: 992px){
-
-}
-
 
 /* monitores normais */
 @media screen and (min-width: 1200px){
@@ -159,4 +338,104 @@ body{
         height: auto;
         margin-right: 5px;
     }
+
+    /* sessao topicos */
+
+    .sessaoContainer{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 15%;
+    }
+
+    .sessaoTopico img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .sessaoTopico h2{
+        width: 80%;
+        height: auto;
+        font-size: 2em;
+        padding: .2em 0;
+    }
+
+    .sessaoTopico h3{
+        font-size: 1.3em;
+        padding: .5em 0;
+    }
+
+    .sessaoTopico p{
+        font-size: 1.2em;
+        padding: .5em ;
+    }
+
+    .workContent{
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .blocoWork:nth-child(odd) > .workContent  {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .contentTitle{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        /* margin-right: 50px; */
+        align-items: center;
+    }
+
+    .textContent{
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+    }
+    
+    /* .-imagem{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    } */
+
+    .blocoWork h2 {
+        font-size: 2em;
+        padding: .5em 0;
+        text-align: left;
+    }
+
+    .blocoWork p {
+        width: 70%;
+        margin-left: 3em;
+        font-size: 1em;
+    }
+
+    /* #imagemTitulo1{    
+        margin-right: 50px;
+        border:  1px solid green;    
+    } */
+
+       /* #imagemTitulo2{
+           margin-top: 24px;
+           margin-right: 50px;
+           border:  1px solid green;
+       } */
+
+       /* #texto2{
+           margin-left: 99px;
+           width: 80%;
+       } */
+
+       /* #imagemTitulo3{
+        margin-top: 24px;
+        margin-right: 50px;
+        border:  1px solid green;
+       } */
+    
+       .form{
+        padding: 0 30%;
+       }
 }
